@@ -32,3 +32,18 @@
 
 14) var personalInfo = document.querySelector('.bio-info'); personalInfo.innerHTML = "";
     
+PART 2
+
+
+1a) var timeTravel = document.querySelector('#time-travel').parentNode; 
+document.querySelector('body section div').removeChild(timeTravel);
+
+2) var pikaImg = document.querySelector('img[src="images/pikachu-drawing.jpg"]'); var dupPika = pikaImg.cloneNode(); var container = document.querySelector('.portfolio-container'); container.appendChild(dupPika);
+
+3)for (var i = 0; i < 11; i++) { var dupPika = pikaImg.cloneNode(); container.appendChild(dupPika); }
+
+4)var listItem = document.createElement('li'); var leftSpan = document.createElement('span'); var lastUpdated = document.createTextNode('Page last updated on'); leftSpan.appendChild(lastUpdated); listItem.appendChild(leftSpan);
+
+var rightSpan = document.createElement('span'); var dateText = document.createTextNode(Date()); listItem.appendChild(rightSpan);
+
+var uList = document.querySelector('.bio-info'); uList.appendChild(listItem);
